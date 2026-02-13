@@ -14,4 +14,12 @@ while num1 == nil do
   num! = tonumber(io.read())
 end
 
-print
+print ("Enter the second number")
+num2 = tonumber(io.read())
+
+while num2 == nil do
+  print("That's not a number, try again!")
+  num2 = tonumber(io.read())
+end
+total = num1 + num2
+print("The total " .. total)
