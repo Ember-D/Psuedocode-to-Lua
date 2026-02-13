@@ -23,3 +23,26 @@ while num2 == nil do
 end
 total = num1 + num2
 print("The total " .. total)
+
+--#3
+
+continueVar = "y"
+total = 0
+newNumber = 0
+
+while continueVar == "y" do
+  print("Enter a number")
+  newNumber = tonumber(io.read())
+
+  while newNumber == nil do
+    print ("Not a number, try again")
+    newNumber = tonumber(io.read())
+    end
+
+    total = total + newNumber
+    print("Do you want to enter another number? y or no")
+    continueVar = io.read()
+
+end
+
+print("The total is " .. total)
