@@ -1,0 +1,17 @@
+--#1
+
+print("Please enter some words")
+someWords = io.read()
+print(string.upper(someWords))
+
+--#2
+
+print("Enter the first number")
+num1 = tonumber(io.read())
+
+while num1 == nil do
+  print("That's not a number, try again!")
+  num! = tonumber(io.read())
+end
+
+print
